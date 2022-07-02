@@ -1,0 +1,41 @@
+% Emacs, this is -*-latex-*-
+
+\title{KLT}
+
+\maketitle
+
+\tableofcontents
+
+For example, the
+2x2-\href{https://en.wikipedia.org/wiki/Karhunen-Loeve_theorem}{KLT}~\cite{sayood2017introduction}
+is defined by
+\begin{equation}
+  \begin{bmatrix}
+    {\mathbf{y}}_0 \\
+    {\mathbf{y}}_1
+  \end{bmatrix}
+  = 
+  \begin{bmatrix} \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} \end{bmatrix}
+  \begin{bmatrix}
+    {\mathbf{x}}_0 \\
+    {\mathbf{x}}_1
+  \end{bmatrix},
+  \label{eq:KLT_transform}
+\end{equation}
+and it holds that
+\begin{equation}
+  \mathbf{K}={\mathbf{K}}^{-1}={\mathbf{K}}^{\text T},
+  \label{eq:orthogonal_matrix}
+\end{equation}
+where ${\mathbf{K}}^{\text T}$ represents the transpose matrix of
+$\mathbf{K}$.  Eq.~\ref{eq:orthogonal_matrix} is true for all
+\href{https://en.wikipedia.org/wiki/Orthogonality}{orthogonal}
+transforms, and therefore
+\begin{equation}
+  \langle {\mathbf{K}}_i, {\mathbf{K}}_j\rangle = 0, \forall i\neq j.
+\end{equation}
+
+\section{Resources}
+
+\renewcommand{\addcontentsline}[3]{}% Remove functionality of \addcontentsline
+\bibliography{maths,data-compression,signal-processing,DWT,image-compression,image-processing}
